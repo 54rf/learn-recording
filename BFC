@@ -1,4 +1,20 @@
-<!-- BFC垂直方向边距重叠 -->
+BFC
+概念：块级格式化上下文
+创建：
+1.float取none以外的值
+2.position取static、relative以外的值
+3.display：table/table-cell
+4.overflow:取visible以外的值
+
+原理：
+1.bfc元素在垂直方向上的边距发生重叠
+2.bfc的区域不会与浮动元素的box重叠
+3.bfc是一个独立的容器，外面的元素不会影响里面的元素，里面的元素也不会影响外面的元素
+4.计算bfc高度时浮动元素也会参与计算
+
+
+
+<!-- BFC垂直方向边距重叠 原理1、3-->
 
       <section id="margin">
         <style>
@@ -18,7 +34,7 @@
         <p>3</p>
       </section>
 
-      <!-- BFC不与float重叠 -->
+      <!-- BFC不与float重叠 原理2-->
       <section id="layout">
         <style media="screen">
           #layout{
@@ -40,7 +56,7 @@
         <div class="right"></div>
       </section>
 
-      <!-- BFC子元素即使是float也会参与计算 -->
+      <!-- BFC子元素即使是float也会参与计算 原理4 -->
       <section id="float">
         <style media="screen">
           #float{
