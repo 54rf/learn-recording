@@ -56,7 +56,7 @@ BFC
         <div class="right"></div>
       </section>
 
-      <!-- BFC子元素即使是float也会参与计算 原理4 -->
+      <!-- BFC子元素即使是float也会参与计算 原理4-->
       <section id="float">
         <style media="screen">
           #float{
@@ -68,3 +68,9 @@ BFC
             float: left;
             font-size: 30px;
           }
+        </style>
+        <div class="float">我是浮动元素</div>
+      </section>
+          
+codepen链接：https://codepen.io/54rf/pen/KXGgaQ
+          
