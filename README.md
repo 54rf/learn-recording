@@ -14,7 +14,7 @@ BFC
 1.float取none以外的值
 2.position取static、relative以外的值
 3.display：table/table-cell
-4.overflow:取auto以外的值
+4.overflow:取visible以外的值
 
 原理：
 1.bfc元素在垂直方向上的边距发生重叠
